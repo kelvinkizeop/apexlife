@@ -8,83 +8,61 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <header class="header">
-    <div class="logo-container">
-        <img src="images/apexlogo.png" alt="logo" class="logo">
-    </div>
-    <nav class="nav">  
-       <ul class="nav-list">
-        <a href="#ig"><li>Gold mining</li>
-        </a>
-        <a href="#plans"><li>Company plans</li>
-        </a>
-        <a href="#faq-section"><li>FAQs</li>
-        </a>
-        <a href="#rsc"><li>Real Estate</li>
-        </a>
-        <a href="#tccs"><li>Track Markets</li>
-        </a>
+  <div class="logo-container">
+      <img src="images/apexlogo.png" alt="logo" class="logo">
+  </div>
+  
+  <!-- Navigation Menu -->
+  <nav class="nav">  
+      <ul class="nav-list">
+          <li><a href="#ig">Gold mining</a></li>
+          <li><a href="#plans">Company plans</a></li>
+          <li><a href="#faq-section">FAQs</a></li>
+          <li><a href="#rsc">Real Estate</a></li>
+          <li><a href="#tccs">Track Markets</a></li>
+      </ul>
+  </nav>
+  
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
 
-        </ul>
-          <div class="register-container">
-        <a href="s.php">
-            <button class="sign-up">Sign up</button>
-        </a>
-        <a href="l.php">
-            <button class="log-in">Log in</button>
-        </a>
-          </div>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div> 
-    </nav>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-    <div class="dropdown-menu">
-         <!-- Close icon (X) -->
-        <ul class="dropdown-list">
-            <li><a href="#ig">Gold mining </a></li>
-            <li><a href="#rsc">Real Estate </a></li>
-            <li><a href="#plans">Company Plans</a></li>
-            <li><a href="#tccs">Track Markets </a></li>
-            <li><a href="faq-section">FAQs </a></li>
-            <li><a href="s.php">join</a></li> <!-- Sign Up Button -->
-        </ul>
-        <button class="close-btn" id="close-btn">&times;</button>
-    </div>
+
+  <!-- Dropdown Menu (For Mobile View) -->
+  <div class="dropdown-menu" id="dropdown-menu">
+      <ul class="dropdown-list">
+          <li><a href="#ig">Gold mining</a></li>
+          <li><a href="#rsc">Real Estate</a></li>
+          <li><a href="#plans">Company Plans</a></li>
+          <li><a href="#tccs">Track Markets</a></li>
+          <li><a href="#faq-section">FAQs</a></li>
+          <li><a href="s.php">Join</a></li> <!-- Sign Up Button -->
+      </ul>
+      <button class="close-btn" id="close-btn">&times;</button>
+  </div>
 </header>
 
-<body>
 
-    <section class="website-div">
-        <div class="website-name">APEX LIVE TRADING </div>
-        </section>
-        <section class="slogan">
-        <div class="website-slogan"> Empowering Your Financial Future </div>
-        </section>
-
-
+  <body>
+    
     <section id="clc"  class="clc">
-    <div class="clmc">
         <div class="clb">
           <img src="images/network.jpg" alt="f1" class="clm">
         </div>
-        <div class="clb">
-           <img src="images/c2.jpg" alt="f2"class="clm">
-        </div>
-        <div class="clb">
-           <img src="images/c3.jpg" alt="f3"class="clm">
-        </div>
-        <div class="clb">
-           <img src="images/c4.jpg" alt="f4"class="clm">
-        </div>
-        <div class="clb">
-           <img src="images/c5.jpg" alt="f5"class="clm">
-        </div>
-        <div class="clb">
-           <img src="images/c6.jpg" alt="f6"class="clm">
-        </div>
-    </div>
+        
+    <section class="website-di">
+      <div class="reg-c">
+        <h1>APEX LIVE TRADING </h1>
+          <!-- Register and Login Buttons -->
+    <div class="register-container">
+      <a href="s.php">
+          <button class="sign-up">Sign up</button>
+      </a>
+      <a href="l.php">
+          <button class="log-in">Log in</button>
+      </a>
+  </div>
+</div>
+    </section>
     </section>
 
     <!-- TradingView Widget BEGIN -->
@@ -185,240 +163,38 @@
     <p> <strong>Risk Management:</strong> At Apex Life Trading  We can help mitigate risks associated with gold investments, such as price fluctuations, storage concerns, and potential fraud. We often employ strategies like diversification and hedging to protect your portfolio.</p>
     <p><strong>Liquidity:</strong>Through ETFs or gold-backed securities, gold investments are more liquid compared to physical gold, as they can be easily bought or sold on financial markets. This flexibility is especially important if you need to quickly access your capital</p>
 </section>
-<section id="tccs" class="tccs">
-<div class="tcc1">
+
+<section class="track">
+  <div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
     {
-    "colorTheme"; "dark",
-    "dateRange"; "12M",
-    "showChart"; true,
+    "width"; "500",
+    "height"; "500",
+    "symbol"; "NASDAQ:AAPL",
+    "interval"; "D",
+    "timezone"; "Etc/UTC",
+    "theme"; "light",
+    "style"; "1",
     "locale"; "en",
-    "width"; "100%",
-    "height"; "100%",
-    "largeChartUrl"; "",
-    "isTransparent"; false,
-    "showSymbolLogo"; true,
-    "showFloatingTooltip"; false,
-    "plotLineColorGrowing"; "rgba(41, 98, 255, 1)",
-    "plotLineColorFalling"; "rgba(255, 0, 0, 1)",
-    "gridLineColor"; "rgba(240, 243, 250, 0)",
-    "scaleFontColor"; "rgba(209, 212, 220, 1)",
-    "belowLineFillColorGrowing"; "rgba(41, 98, 255, 0.12)",
-    "belowLineFillColorFalling"; "rgba(41, 98, 255, 0.12)",
-    "belowLineFillColorGrowingBottom"; "rgba(41, 98, 255, 0)",
-    "belowLineFillColorFallingBottom"; "rgba(41, 98, 255, 0)",
-    "symbolActiveColor"; "rgba(41, 98, 255, 0.12)",
-    "tabs"; [
-      {
-        "title": "Indices",
-        "symbols": [
-          {
-            "s": "FOREXCOM:SPXUSD",
-            "d": "S&P 500 Index"
-          },
-          {
-            "s": "FOREXCOM:NSXUSD",
-            "d": "US 100 Cash CFD"
-          },
-          {
-            "s": "FOREXCOM:DJI",
-            "d": "Dow Jones Industrial Average Index"
-          },
-          {
-            "s": "INDEX:NKY",
-            "d": "Japan 225"
-          },
-          {
-            "s": "INDEX:DEU40",
-            "d": "DAX Index"
-          },
-          {
-            "s": "FOREXCOM:UKXGBP",
-            "d": "FTSE 100 Index"
-          }
-        ],
-        "originalTitle": "Indices"
-      },
-      {
-        "title": "Futures",
-        "symbols": [
-          {
-            "s": "CME_MINI:ES1!",
-            "d": "S&P 500"
-          },
-          {
-            "s": "CME:6E1!",
-            "d": "Euro"
-          },
-          {
-            "s": "COMEX:GC1!",
-            "d": "Gold"
-          },
-          {
-            "s": "NYMEX:CL1!",
-            "d": "WTI Crude Oil"
-          },
-          {
-            "s": "NYMEX:NG1!",
-            "d": "Gas"
-          },
-          {
-            "s": "CBOT:ZC1!",
-            "d": "Corn"
-          }
-        ],
-        "originalTitle": "Futures"
-      },
-      {
-        "title": "Bonds",
-        "symbols": [
-          {
-            "s": "CBOT:ZB1!",
-            "d": "T-Bond"
-          },
-          {
-            "s": "CBOT:UB1!",
-            "d": "Ultra T-Bond"
-          },
-          {
-            "s": "EUREX:FGBL1!",
-            "d": "Euro Bund"
-          },
-          {
-            "s": "EUREX:FBTP1!",
-            "d": "Euro BTP"
-          },
-          {
-            "s": "EUREX:FGBM1!",
-            "d": "Euro BOBL"
-          }
-        ],
-        "originalTitle": "Bonds"
-      },
-      {
-        "title": "Forex",
-        "symbols": [
-          {
-            "s": "FX:EURUSD",
-            "d": "EUR to USD"
-          },
-          {
-            "s": "FX:GBPUSD",
-            "d": "GBP to USD"
-          },
-          {
-            "s": "FX:USDJPY",
-            "d": "USD to JPY"
-          },
-          {
-            "s": "FX:USDCHF",
-            "d": "USD to CHF"
-          },
-          {
-            "s": "FX:AUDUSD",
-            "d": "AUD to USD"
-          },
-          {
-            "s": "FX:USDCAD",
-            "d": "USD to CAD"
-          }
-        ],
-        "originalTitle": "Forex"
-      },
-      {
-        "title": "crypto",
-        "symbols": [
-          {
-            "s": "BINANCE:BTCUSDT",
-            "d": "btc"
-          },
-          {
-            "s": "BINANCE:ETHUSDT",
-            "d": "eth"
-          },
-          {
-            "s": "BYBIT:LTCUSDT",
-            "d": "ltc"
-          },
-          {
-            "s": "BINANCE:SOLUSDT",
-            "d": "sol"
-          },
-          {
-            "s": "BINANCE:DOGEUSDT"
-          },
-          {
-            "s": "COINBASE:XRPUSD"
-          },
-          {
-            "s": "BINANCE:PEPEUSDT"
-          },
-          {
-            "s": "BINANCE:DOTUSDT"
-          }
-        ]
-      }
-    ]
+    "hide_side_toolbar"; false,
+    "allow_symbol_change"; true,
+    "calendar"; false,
+    "support_host"; "https://www.tradingview.com"
   }
     </script>
   </div>
+</section>
+<section id="tccs" class="tccs">>
   <div class="tcc1t">
     <h1>  STAY ON TRACK  WITH YOUR FAVOURITE MARKET PRICE</h1>
-
   </div>
 </section>
 <section class="tcc">
-<div class="tcc">
-    <div class="tradi"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
-    {
-    "width"; 550,
-    "height"; 400,
-    "currencies"; [
-      "EUR",
-      "USD",
-      "JPY",
-      "GBP",
-      "CHF",
-      "AUD",
-      "CAD",
-      "NZD",
-      "TRY",
-      "SEK",
-      "NOK",
-      "ZAR",
-      "HKD",
-      "SGD",
-      "IDR",
-      "ISK",
-      "KWD",
-      "PHP",
-      "MYR",
-      "INR",
-      "SAR",
-      "RUB",
-      "ILS",
-      "CLP",
-      "COP",
-      "PEN",
-      "UYU"
-    ],
-    "isTransparent"; false,
-    "colorTheme"; "light",
-    "locale"; "en",
-    "backgroundColor"; "#ffffff"
-  }
-    </script>
-  </div>
+  <div id="currency-converter-376575"><script type="text/javascript" src="https://www.cashbackforex.com/Content/remote/remote-widgets.js"></script><script type="text/javascript"> RemoteCalc({"Url":"https://www.cashbackforex.com", "TopPaneStyle":"YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KCMxYmExYzQgMjAlLCAjNDliOWFkIDQ1JSk7IGJvcmRlcjogc29saWQgMHB4OyBib3JkZXItYm90dG9tOiBub25lOyBjb2xvcjogd2hpdGU7","BottomPaneStyle":"YmFja2dyb3VuZDogd2hpdGU7IGJvcmRlcjogc29saWQgMXB4ICM3YTdhN2E7IGJvcmRlci10b3A6IG5vbmU7Y29sb3I6IGJsYWNrOw==","ButtonStyle":"YmFja2dyb3VuZDogIzFiYTFjNDsgY29sb3I6IHdoaXRlOyBib3JkZXItcmFkaXVzOiAyMHB4Ow==","TitleStyle":"dGV4dC1hbGlnbjogbGVmdDsgZm9udC1zaXplOiAxNnB4OyBmb250LXdlaWdodDogNTAwOw==","TextboxStyle":"YmFja2dyb3VuZC1jb2xvcjogd2hpdGU7IGNvbG9yOiBibGFjazsgYm9yZGVyOiBzb2xpZCAxcHggI2FhYWFhYQ==","ContainerWidth":"250","HighlightColor":"#ffff00","IsDisplayTitle":true,"IsShowEmbedButton":false,"CompactType":"small","DefaultCurrencyFrom":"EUR","DefaultCurrencyTo":"USD","Calculator":"currency-converter","ContainerId":"currency-converter-376575"});</script></div>
 </section>
 <section id="rsc"  class="rsc">
-    <div class="rsm">
-        <img src="images/apex4.jpg" alt="f9" class="rsm">
-    </div>
-    <div class="rsm">
-        <img src="images/c9.jpg" alt="f9" class="rsm">
-    </div>
     <div class="rst">
         <h3 id="intro-text">
             At <strong>Apex Life Trading Company,</strong> we understand the power of real estate as an investment vehicle that can generate consistent returns. We focus on using real estate investments as a means to build wealth for our clients. By strategically investing in high-potential residential, commercial, and industrial properties, we aim to create a diversified portfolio that generates income, appreciates in value, and provides long-term growth for our investors. Whether you're new to real estate or experienced in the market, our goal is to leverage the real estate sector to help you achieve your financial aspirations.
@@ -534,9 +310,9 @@
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
     {
     "interval"; "1m",
-    "width"; 425,
+    "width"; 50,
     "isTransparent"; false,
-    "height"; 450,
+    "height"; 100,
     "symbol"; "NASDAQ:AAPL",
     "showIntervalTabs"; true,
     "displayMode"; "single",
@@ -546,6 +322,8 @@
     </script>
   </div>
   <!-- TradingView Widget END -->
+
+
 </section>
 <section class="ref">
     <div class="reft">
@@ -554,22 +332,7 @@
        <img src="images/c10.jpg" class="c">
     </div>
 </section>
-<section class="st">
-<div class="stf">
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-    {
-    "feedMode"; "all_symbols",
-    "isTransparent"; false,
-    "displayMode"; "adaptive",
-    "width"; "100%",
-    "height"; "100%",
-    "colorTheme"; "light",
-    "locale"; "en"
-  }
-    </script>
-  </div>
- 
-</section>
+
 <section class="tp">
     <div class="m">
         <img src="images/2.jpg" class="m">
@@ -616,12 +379,12 @@
     <div class="footer-container">
     
       <div class="footer-info">
-        <p><strong>Company Location:</strong> Arizona, USA</p>
+     <p>&copy; 2010-2025 <strong>APEX LIFE TRADING COMPANY</strong>. All rights reserved.</p></a>
       </div>
   
       <div class="footer-links">
         <a href="#faq-section" class="footer-link">Need help? visit our live chat</a>
-        <a href="#privacy" class="footer-link"> <p>&copy; 2010-2025 <strong>APEX LIFE TRADING COMPANY</strong>. All rights reserved.</p></a>
+        <p><strong>Company Location:</strong> Arizona, USA</p>
       </div>
   
     </div>
@@ -642,3 +405,6 @@
   <script src="js/index.js"></script>
 </body>
 </html>
+
+    
+ 
