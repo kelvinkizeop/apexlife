@@ -770,7 +770,7 @@ h1 {
         font-size: 0.8rem;
         text-align: start;
         margin-right: 10%;
-        font-weight: lighter;
+       font-weight: bold;
      }
        .c{
         width: auto;
@@ -799,14 +799,10 @@ h1 {
     .w {
         flex-direction: column; 
         justify-content: center;
-        align-items: center; 
-        
-       
-          
+        align-items: center;  
+        padding-left: 0%; 
     }
-    .w{
-        padding-left: 20%;  
-    }
+   
     .st{
         flex-direction: column; 
         justify-content: center;
