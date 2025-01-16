@@ -619,7 +619,10 @@ h1 {
         margin-left: 20%; 
 
 
-    }  
+    } 
+     .clb{
+        display: none;
+    }
     .nav {
         display: none;
     }
