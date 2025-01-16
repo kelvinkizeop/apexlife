@@ -605,6 +605,38 @@ h1 {
   #terms-link:hover + #terms-content {
     display: block;
   }
+  .whatsapp-contact {
+    bottom: 20px;
+    left: 20px; 
+    z-index: 3000;
+    position: fixed; /* Space between image and text */
+}
+
+.whatsapp-contact a {
+    display: inline-block;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.whatsapp-contact a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.whatsapp-icon {
+    width: 60px; /* Adjust the size of the WhatsApp icon */
+    height: 60px;
+    object-fit: contain; /* Ensure the image retains its proportions */
+}
+
+.whatsapp-contact p {
+    font-size: 14px;
+    color: #333; /* Text color */
+    margin: 0;
+    text-align: center;
+}
+
 
 
 
@@ -758,10 +790,10 @@ h1 {
     
     }
     .tcc1t h1{
-      font-size: 1.5rem;
-      letter-spacing: 8px;
-      text-align: center;
-      padding-left: 15%;
+      font-size: 0.5rem;
+      letter-spacing: 2px;
+      text-align: start;
+      margin-left: 5%;
     
     }
     .plans p {
