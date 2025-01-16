@@ -187,7 +187,7 @@ h1 {
     background-color:white; /* Semi-transparent background */
     transform: translateY(-300%); /* Initially hidden above the screen */
     transition: transform 0.9s ease-in-out; /* Smooth transition for sliding down */
-    z-index: 2000;
+    z-index: 5000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
